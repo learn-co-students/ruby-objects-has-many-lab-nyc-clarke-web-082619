@@ -6,10 +6,10 @@ class Song
 
     def initialize(name)
         @name = name
-        save
+        save #
     end
 
-    def save
+    def save # not needed, just put it there
         @@all << self
     end
 
@@ -18,7 +18,7 @@ class Song
     end
 
     def artist_name
-        if self.artist
+        if self.artist  # artist.name if artist
             self.artist.name
         else
             nil
